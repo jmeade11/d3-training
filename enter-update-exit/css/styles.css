@@ -1,0 +1,90 @@
+:root {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+}
+
+button {
+  font-size: 100%;
+  margin: .5rem .25rem;
+  background-color: rgba(255,255,255,1);
+  border: 2px solid red;
+  border-radius: 2rem;
+  padding: .75rem 1rem;
+  color: red;
+  width: 9.5rem;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(255,0,0,.25);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+ul.legend {
+  list-style: none;
+  padding: 0;
+}
+
+ul.legend > li {
+  line-height: 1.5;
+}
+
+div {
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[class^="legend-"]::before {
+  content: '';
+  height: 1.25rem;
+  width: 1.25rem;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 .5rem;
+  transform: translateY(5px)
+}
+
+.update,
+[class$="update"]::before {
+  border-style: solid;
+  color: blue;
+  background-color: rgba(0,0,255,.1);
+}
+
+.enter,
+[class$="enter"]::before  {
+  border-style: solid;
+  color: green;
+  background-color: rgba(0,255,0,.1);
+}
+
+.exit,
+[class$="exit"]::before  {
+  opacity: .5;
+  border-style: dashed;
+  color: #ccc;
+  background-color: rgba(0,0,0,.1);
+}

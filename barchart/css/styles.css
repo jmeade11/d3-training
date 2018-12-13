@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+}
+svg {
+  background: #eee;
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: bold;
+}

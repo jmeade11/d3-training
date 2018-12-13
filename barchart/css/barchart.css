@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+svg {
+  width: calc(100vmin - 1rem);
+  height: calc(75vmin - 1rem);
+  margin: 0 .5rem;
+  background: #eee;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  font-weight: bold;
+}
+
+rect {
+  cursor: pointer;
+}
